@@ -7,14 +7,17 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@Builder
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
+@Builder
 @JsonInclude
-
-
 public class CarPostDTO {
+
     private String model;
+
+    private String brand;
+
+    private Double price;
 
     private String description;
 
@@ -33,3 +36,4 @@ public class CarPostDTO {
     private String contact;
 
 }
+
